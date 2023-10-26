@@ -1,0 +1,52 @@
+﻿<header class="bg-white lg:rounded-[20px] lg:max-w-[1790px] w-full mx-auto lg:h-[66px] md:h-[50px] h-[55px] flex items-center justify-between lg:px-[49px] px-5 lg:mt-[56px] shadow-[0_5px_50px_0_rgba(0,0,0,0.25)] navbar-fixed">
+    <div class="flex-1 flex items-center">
+        <a href="index.html" class="lg:-ml-[85px] md:-ml-[65px] -ml-[40px]">
+            <img src="/images/logo.png" alt="Logo" class="max-h-[41px]" />
+        </a>
+        <div class="hidden lg:block lg:-ml-[30px] xl:ml-0">
+            <ul class="lg:flex items-center lg:gap-[15px] xl:gap-[66px]">
+                <li><a href="#about" class="text-[20px] font-semibold text-primary lang" key="about">About us</a></li>
+                <li><a href="#feature" class="text-[20px] font-semibold text-primary lang" key="feature">Feature</a></li>
+                <li><a href="/price" class="text-[20px] font-semibold text-primary lang" key="price">Price</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="flex justify-end items-center nav">
+        <button class="lg:hidden">
+            <span class="block w-[30px] h-[2px] my-2 bg-gray"></span>
+            <span class="block w-[30px] h-[2px] my-2 bg-gray"></span>
+            <span class="block w-[30px] h-[2px] my-2 bg-gray"></span>
+        </button>
+        <div class="menu hidden lg:block absolute lg:relative top-full left-0 right-0 p-5 lg:p-0 w-full bg-white">
+            <!-- Show desktop only -->
+            <ul class="items-center gap-[66px] block lg:hidden">
+                <li><a href="#about" class="text-[20px] font-semibold text-primary lang" key="about">About us</a></li>
+                <li><a href="#feature" class="text-[20px] font-semibold text-primary lang" key="feature">Feature</a></li>
+                <li><a href="/price" class="text-[20px] font-semibold text-primary lang" key="price">Price</a></li>
+            </ul>
+            <ul class="lg:flex justify-between items-center space-y-4 lg:space-y-0">
+                <li class="lg:mr-[15px] xl:mr-[66px]"><a href="/book" class="text-[20px] font-semibold text-primary lang" key="book-now">Book Now</a></li>
+                <li>
+                    <div class="flex flex-row items-center">
+                        <div class="dropdown mr-4">
+                            <a class="dropdown-toggle text-black" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <i class="flag-icon flag-icon-id"></i> IND
+                            </a>
+                            <div class="dropdown-menu translate" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item active" href="#" data-value="id"><i class="flag-icon flag-icon-id"></i> IND</a>
+                                <a class="dropdown-item" href="#" data-value="en"><i class="flag-icon flag-icon-us"></i> ENG</a>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <div class="rounded-[15px] p-[3px] bg-gradient-to-t from-primary to-[#8FAFFF]">
+                                <div class="flex justify-center items-center rounded-[12px] bg-white px-7 min-h-[41px]">
+                                    <span class="text-[20px] font-semibold text-primary">Login</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
