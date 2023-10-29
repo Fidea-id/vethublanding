@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 using System.Diagnostics;
 using VethubLanding.Interfaces;
 using VethubLanding.Models;
@@ -32,6 +33,23 @@ namespace VethubLanding.Controllers
         {
             return View();
         }
+
+        [HttpPost("/PostBook")]
+        [ValidateAntiForgeryToken]
+        public async Task<string> PostBook(BookDemoRequest request)
+        {
+            try
+            {
+                //Get the AuthToken
+                var response = await _restAPIService.PostResponse<BaseAPIResponse>("Auth/Demo", JsonConvert.SerializeObject(request));
+                return "success";
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
+
         [HttpGet("/GetPrices")]
         public async Task<IEnumerable<SubscriptionResponse>> GetPrices()
         {
