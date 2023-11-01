@@ -1,7 +1,77 @@
-﻿<!-- header -->
+﻿@section Styles{
+    <style>
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        .spinner-container {
+            width: 40px;
+            height: 40px;
+            position: relative;
+        }
+
+        .spinner {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background-color: #007bff;
+            opacity: 0.6;
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation: double-bounce 2s infinite ease-in-out;
+        }
+
+        .double-bounce1, .double-bounce2 {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background-color: #007bff;
+            opacity: 0.6;
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation: double-bounce 2s infinite ease-in-out;
+        }
+
+        .double-bounce2 {
+            animation-delay: -1s;
+        }
+
+        @@keyframes double-bounce {
+            0%, 100% {
+                transform: scale(0);
+            }
+
+            50% {
+                transform: scale(1);
+            }
+        }
+    </style>
+}
+
+<!-- header -->
 <section>
     @Html.Partial("_HeaderPartial")
 </section>
+
+<div class="overlay" style="display: none;">
+    <div class="spinner-container">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+</div>
 
 <div class="container mx-auto lg:px-0 px-5 pt-[95px] relative">
     <div class="container">
@@ -101,6 +171,8 @@
 </section>
 
 @section Scripts{
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.9.0/dist/sweetalert2.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
         $(document).ready(function () {
             // Function to set ClinicType based on the selected radio button
@@ -130,6 +202,11 @@
                 var form = $(this);
                 var url = "/PostBook";
 
+                var overlay = $('.overlay');
+                var spinnerContainer = $('.spinner-container');
+                console.log(overlay);
+                overlay.show();
+
                 $.ajax({
                     type: "POST",
                     url: url,
@@ -138,8 +215,18 @@
                         RequestVerificationToken: $("input[name='__RequestVerificationToken']").val()
                     },
                     success: function (response) {
-                        // Handle the response from the server
-                        alert("Booking sukses, mohon tunggu agar kami menghubungi Anda");
+
+                        overlay.hide();
+                        Swal.fire({
+                            title: 'Sukses',
+                            text: 'Anda berhasil melakukan pendaftaran. Mohon tunggu tim kami untuk menghubungi Anda.',
+                            icon: 'success',
+                        }).then((result) => {
+                            if (result.isConfirmed || result.dismiss) {
+                                location.reload(); // Refresh the page
+                            }
+                        });
+
                     },
                     error: function (xhr, status, error) {
                         // Handle errors
