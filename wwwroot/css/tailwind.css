@@ -580,6 +580,9 @@ body {
 .right-0 {
     right: 0px;
 }
+.right-\[50px\] {
+    right: 50px;
+}
 
 .right-\[125px\] {
     right: 125px;
@@ -1292,6 +1295,10 @@ body {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
 }
+.px-20 {
+    padding-left: 6.5rem;
+    padding-right: 6.5rem;
+}
 
 .px-4 {
     padding-left: 1rem;
@@ -1450,43 +1457,43 @@ body {
 }
 
 .text-\[14px\] {
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .text-\[16px\] {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .text-\[18px\] {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .text-\[20px\] {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .text-\[22px\] {
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .text-\[25px\] {
-    font-size: 25px;
+    font-size: 22px;
 }
 
 .text-\[30px\] {
-    font-size: 30px;
+    font-size: 24px;
 }
 
 .text-\[35px\] {
-    font-size: 35px;
+    font-size: 28px;
 }
 
 .text-\[40px\] {
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .text-\[50px\] {
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .text-base {
@@ -1994,27 +2001,27 @@ span.required {
     }
 
     .md\:text-\[18px\] {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .md\:text-\[20px\] {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .md\:text-\[24px\] {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .md\:text-\[25px\] {
-        font-size: 25px;
+        font-size: 22px;
     }
 
     .md\:text-\[35px\] {
-        font-size: 35px;
+        font-size: 28px;
     }
 
     .md\:text-\[40px\] {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .md\:text-base {
@@ -2215,23 +2222,23 @@ span.required {
     }
 
     .lg\:text-\[18px\] {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .lg\:text-\[30px\] {
-        font-size: 30px;
+        font-size: 24px;
     }
 
     .lg\:text-\[35px\] {
-        font-size: 35px;
+        font-size: 18px;
     }
 
     .lg\:text-\[40px\] {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .lg\:text-\[50px\] {
-        font-size: 50px;
+        font-size: 40px;
     }
 }
 
@@ -2308,10 +2315,10 @@ span.required {
     }
 
     .xl\:text-\[60px\] {
-        font-size: 60px;
+        font-size: 50px;
     }
 
     .xl\:text-\[65px\] {
-        font-size: 65px;
+        font-size: 54px;
     }
 }
