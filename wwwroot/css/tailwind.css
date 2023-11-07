@@ -783,6 +783,9 @@ body {
     margin-top: 110px;
 }
 
+.mt-\[30px\] {
+    margin-top: 30px;
+}
 .mt-\[7px\] {
     margin-top: 7px;
 }
@@ -932,7 +935,7 @@ body {
 }
 
 .min-w-\[250px\] {
-    min-width: 250px;
+    min-width: 200px;
 }
 
 .min-w-\[330px\] {
@@ -943,6 +946,9 @@ body {
     min-width: 65px;
 }
 
+.min-w-\[907px\] {
+    min-width: 907px;
+}
 .min-w-\[957px\] {
     min-width: 957px;
 }
@@ -1037,6 +1043,9 @@ body {
 
 .gap-\[29px\] {
     gap: 29px;
+}
+.gap-\[60px\] {
+    gap: 60px;
 }
 
 .gap-\[66px\] {
@@ -1330,6 +1339,10 @@ body {
     padding-right: 47px;
 }
 
+.px-\[60px\] {
+    padding-left: 60px;
+    padding-right: 60px;
+}
 .px-\[66px\] {
     padding-left: 66px;
     padding-right: 66px;
@@ -1603,13 +1616,13 @@ body {
 
 @media (min-width: 1024px) {
     .btn {
-        font-size: 20px;
+        font-size: 18px;
     }
 }
 
 @media (min-width: 1280px) {
     .btn {
-        font-size: 30px;
+        font-size: 24px;
     }
 }
 
@@ -1746,7 +1759,7 @@ body {
 }
 
 span.required {
-    font-size: 35px;
+    font-size: 22px;
     --tw-text-opacity: 1;
     color: rgb(13 90 218 / var(--tw-text-opacity));
 }
@@ -1965,8 +1978,8 @@ span.required {
     }
 
     .md\:px-20 {
-        padding-left: 5rem;
-        padding-right: 5rem;
+        padding-left: 6.5rem;
+        padding-right: 6.5rem;
     }
 
     .md\:px-8 {
@@ -1994,6 +2007,10 @@ span.required {
 
     .md\:pr-\[49px\] {
         padding-right: 49px;
+    }
+
+    .md\:pt-\[200px\] {
+        padding-top: 200px;
     }
 
     .md\:pt-\[275px\] {
@@ -2080,6 +2097,9 @@ span.required {
         margin-left: -95px;
     }
 
+    .lg\:ml-\[-160px\] {
+        margin-left: -160px;
+    }
     .lg\:ml-\[-190px\] {
         margin-left: -190px;
     }
@@ -2205,6 +2225,10 @@ span.required {
         padding-left: 215px;
     }
 
+    .lg\:pl-\[40px\] {
+        padding-right: 40px;
+    }
+
     .lg\:pl-\[60px\] {
         padding-left: 60px;
     }
@@ -2213,6 +2237,10 @@ span.required {
         padding-right: 1.25rem;
     }
 
+    .lg\:pr-\[40px\] {
+        padding-right: 40px;
+    }
+    
     .lg\:pr-\[60px\] {
         padding-right: 60px;
     }
@@ -2308,6 +2336,9 @@ span.required {
 
     .xl\:pl-\[250px\] {
         padding-left: 250px;
+    }
+    .xl\:pl-\[200px\] {
+        padding-left: 200px;
     }
 
     .xl\:text-left {
