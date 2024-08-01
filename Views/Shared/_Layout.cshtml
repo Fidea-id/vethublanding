@@ -1,6 +1,16 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2E0BCNCFPN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-2E0BCNCFPN');
+    </script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VETHUB</title>
@@ -18,8 +28,8 @@
     <!-- <script src="../../node_modules/jquery/dist/jquery.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
     <script src="/js/script.js" asp-append-version="true"></script>
-    <script src="/js/const.js"></script>
-    <script src="/js/translate.js"></script>
+    <script src="/js/const.js" asp-append-version="true"></script>
+    <script src="/js/translate.js" asp-append-version="true"></script>
     @RenderSection("Scripts", false)
 </body>
 </html>
