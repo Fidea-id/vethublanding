@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <_ContentIncludedByDefault Remove="wwwroot\css\responsive.css" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="wwwroot\images\ic-star.svg" />
     <None Include="wwwroot\js\script.js" />
     <None Include="wwwroot\js\site.js" />

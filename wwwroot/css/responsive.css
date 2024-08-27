@@ -1,0 +1,31 @@
+﻿@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    /* For laptop: */
+
+}
+
+@media only screen and (max-width: 768px) {
+    /* For tablet: */
+    .container-title{
+        padding-top:20px;
+    }
+    .navbar-container {
+        height: 66px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    /* For mobile phones: */
+    .book-video {
+        flex-direction: column;
+    }
+    .btn-wa-sales {
+        margin-left: 0;
+        margin-top:20px;
+    }
+}

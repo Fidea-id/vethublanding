@@ -2,12 +2,6 @@ html {
   font-size: 14px;
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
   box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
@@ -17,6 +11,50 @@ html {
   min-height: 100%;
 }
 
-body {
-  margin-bottom: 60px;
+.navbar-container {
+    height: 66px;
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    --tw-shadow: 0 5px 50px 0 rgba(0, 0, 0, 0.25);
+    --tw-shadow-colored: 0 5px 50px 0 var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.container-title{
+    margin-bottom:38px;
+    padding-left:2.5rem;
+    padding-right:2.5rem;
+    padding-top:95px;
+}
+
+/* Base Style for the Play Button */
+.play-button {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#driveVideo {
+    width: 100%;
+    max-width: 1024px;
+    /* Aspect Ratio 16:9 */
+    position: relative;
+    padding-bottom: 56.25%; /* (9 / 16) * 100 = 56.25% */
+    height: 0;
+    overflow: hidden;
+}
+
+#driveVideo iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.btn-wa-sales{
+    margin-left: 1rem;
 }

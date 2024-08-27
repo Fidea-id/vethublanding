@@ -7,14 +7,14 @@
         @Html.Partial("_HeaderPartial")
     </section>
     <div class="container mx-auto px-5 pt-[95px] mb-[38px]">
-        <div class="container mx-auto md:px-20 px-10 pt-[95px] mb-[38px]">
+        <div class="container mx-auto container-title">
             <div class="flex justify-between items-center">
                 <div class="flex-1 z-[1] lg:pr-5 fade-to-right">
                     <h1 class="text-primary md:text-[40px] xl:text-[60px] text-[30px] font-bold lang" key="app.title">Your One Stop<br />Pet Clinic Solution</h1>
                     <p class="text-gray md:text-base mb-[30px] md:text-[18px] text-[14px] lang" key="app.subtitle">We help veterinarians and veterinary clinic owners to manage clinic operations from client arrivals, bookings, payments, patient ambulators, databases of tools and medicines, and financial reports that can be updated in real time</p>
                     <div class="lg:flex flex-row gap-6 space-y-3 lg:space-y-0">
                         <a href="/book" class="btn bg-primary text-white min-w-[250px] text-center uppercase lang" key="free-trial">FREE TRIAL</a>
-                        <a href="https://wa.me/+6282240003524?text=Halo%20saya%20tertarik%20dengan%20vethub." target="_blank" class="btn bg-white text-primary min-w-[250px] border border-primary text-center">Whatsapp Sales</a>
+                        <a href="#feature" class="btn bg-white text-primary min-w-[250px] border border-primary text-center" key="watch-video">Watch Video</a>
                     </div>
                 </div>
                 <div class="flex md:flex-1 justify-end relative">
@@ -28,6 +28,7 @@
         </div>
     </div>
 
+    <div id="about" class="py-5"></div>
     <section class="container mx-auto relative md:px-20 px-10 fade-to-top">
         <div class="md:flex flex-wrap lg:flex-nowrap justify-between space-y-5 lg:space-y-0 lg:gap-5">
             <div class="w-full lg:max-w-[374px] min-h-[265px] mx-auto md:mx-0 border-[1px] border-[#085EB5] shadow-xl rounded-lg bg-white px-7 pb-[40px]">
@@ -51,14 +52,38 @@
         </div>
     </section>
 
-    <div id="about" class="bg-gradient-to-t from-[#D6E7FA] to-[#f3f8fc] pt-[100px] -mt-[125px]">
+    <div class="bg-gradient-to-t from-[#D6E7FA] to-[#f3f8fc] pt-[100px] -mt-[125px]">
         <!-- powered by -->
-        <section class="container mx-auto mt-[110px] md:px-20 px-5 mb-[114px] fade-to-top">
+        <section class="container mx-auto mt-[200px] md:px-20 px-5 mb-[200px] fade-to-top">
             <div class="flex flex-col items-center mb-[10px]">
                 <h4 class="md:text-[20px] text-[16px] font-semibold text-[#C4C7CF]">POWERED BY</h4>
                 <img src="/images/logo-vettalk.png" alt="Powered By" class="md:w-[382px] md:h-[144px]" />
             </div>
             <p class="md:text-[18px] text-[14px] text-gray text-center lang" key="powered-by">VetTalk Indonesia is a pet clinic consultant that is expanding digital-based pet clinics' innovations, along with supporting veterinarians in upgrading their skills to adapt to the era of Industrial Revolution 4.0</p>
+        </section>
+        <div id="feature" class="py-5"></div>
+        <!-- all feature -->
+        <section class="pb-[90px] mb-[95px] fade-to-top">
+            <div class="container mx-auto md:px-20 px-5">
+                <h1 class="text-primary md:text-[35px] lg:text-[50px] xl:text-[65px] text-[30px] font-bold text-center mb-[33px] lang" key="watch-all-feature">
+                    Watch All Feature
+                </h1>
+
+                <div class="relative border-[2px] md:rounded-[30px] rounded-2xl border-primary mb-[44px] overflow-clip max-w-[1024px] max-h-[575px] mx-auto">
+@*                     <!-- Play Button Overlay -->
+                    <button class="play-button" onclick="playVideo()">
+                        <img src="/images/play-button.png" alt="Play Video" />
+                    </button> *@
+                    <div id="driveVideo">
+                        <iframe src="https://drive.google.com/file/d/1U4i8R6N4IvMXCwAx-5w2orALiKyZdL7F/preview" allow="autoplay"></iframe>
+                    </div>
+                </div>
+
+                <div class="flex justify-center book-video">
+                    <a href="/book" class="btn bg-primary text-white uppercase lang text-center" key="free-trial">Book FREE Demo Now</a>
+                    <a href="https://wa.me/+6282240003524?text=Halo%20saya%20tertarik%20dengan%20vethub." target="_blank" class="btn bg-white text-primary min-w-[250px] border border-primary text-center btn-wa-sales">Whatsapp Sales</a>
+                </div>
+            </div>
         </section>
 
         <!-- adds -->
@@ -77,22 +102,12 @@
             </div>
         </section>
 
-        <!-- all feature -->
-        <section class="pt-[79px] pb-[90px] mb-[95px] fade-to-top">
-            <div class="container mx-auto md:px-20 px-5">
-                <h1 class="text-primary md:text-[35px] lg:text-[50px] xl:text-[65px] text-[30px] font-bold text-center mb-[33px] lang" key="watch-all-feature">Watch All Feature</h1>
-                <div class="border-[2px] md:rounded-[30px] rounded-2xl border-primary mb-[44px] overflow-clip max-w-[1032px] max-h-[497px] mx-auto">
-                    <img src="/images/all-feature.png" alt="All Feature" class="w-full" />
-                </div>
-                <div class="flex justify-center">
-                    <a href="/book" class="btn bg-primary text-white uppercase lang" key="free-trial">Book FREE Demo Now</a>
-                </div>
-            </div>
-        </section>
+        <div class="py-5"></div>
     </div>
 
     <!-- review -->
     <section class="container mx-auto md:px-20 px-10 mb-[133px] fade-to-bottom">
+        <div class="py-8"></div>
         <div class="md:columns-2 md:gap-11 space-bottom-8">
             <div class="w-full inline-block fade-to-top">
                 <h1 class="text-primary md:text-[35px] lg:text-[50px] xl:text-[65px] text-[30px] font-bold lang" key="what-they-say-sbout-us">What They Say<br />About Us?</h1>
@@ -175,3 +190,14 @@
     </div>
 
     @Html.Partial("_FooterPartial")
+
+@section Scripts{
+    <script>
+        function playVideo() {
+            var iframe = document.getElementById("driveVideo");
+            var src = iframe.src;
+            iframe.src = "";  // Clear the src
+            iframe.src = src; // Reassign the same src to reload the iframe and start the video
+        }
+    </script>
+}

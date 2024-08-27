@@ -73,7 +73,7 @@
     </div>
 </div>
 
-<div class="container mx-auto lg:px-0 px-5 pt-[95px] relative">
+<div class="container mx-auto lg:px-0 px-5 pt-[95px]">
     <div class="container">
         <div class="text-center">
             <h1 class="text-primary md:text-[35px] lg:text-[50px] xl:text-[65px] text-[30px] font-bold mb-[35px] lang" key="demo-request-registration">Demo Request Registration</h1>
@@ -82,70 +82,67 @@
 </div>
 <section class="container mx-auto mb-[82px]">
     <div class="flex flex-row items-center gap-[60px]">
-    @* <div class="md:flex flex-wrap lg:flex-nowrap justify-between space-y-5 lg:space-y-0 gap-[60px]"> *@
-        <div class="min-w-[907px] rounded-[40px] bg-[#F3F8FC] px-[60px] py-[32px]">
+        <div class="mx-auto min-w-[907px] rounded-[40px] bg-[#F3F8FC] px-[60px] py-[32px]">
             <form id="book-form" method="post">
                 @Html.AntiForgeryToken()
 
-                <h3 class="text-primary text-[40px] font-semibold lang" key="personal-information">Personal Information</h3>
+                <h3 class="text-primary md:text-[30px] lg:text-[40px] xl:text-[50px] text-[25px] font-semibold lang" key="personal-information">Personal Information</h3>
                 <div class="form-group">
-                    <label class="text-[25px]"><span class="lang" key="full-name">Full Name</span></label>
+                    <label class="text-[20px]"><span class="lang" key="full-name">Full Name</span></label>
                     <input type="text" name="Name" class="form-control" required />
                 </div>
                 <div class="flex flex-row gap-[28px]">
                     <div class="form-group">
-                        <label class="text-[25px]"><span class="lang" key="position">Position</span></label>
+                        <label class="text-[20px]"><span class="lang" key="position">Position</span></label>
                         <input type="text" name="Job" class="form-control" required />
                     </div>
                     <div class="form-group">
-                        <label class="text-[25px]">Email</label>
+                        <label class="text-[20px]">Email</label>
                         <input type="email" name="Email" class="form-control" required />
                     </div>
                 </div>
                 <div class="flex w-1/2 pr-[14px] mb-[20px]">
                     <div class="form-group">
-                        <label class="text-[25px]"><span class="lang" key="whatsapp-active">Whatsapp Active</span></label>
+                        <label class="text-[20px]"><span class="lang" key="whatsapp-active">Whatsapp Active</span></label>
                         <input type="text" name="PhoneNumber" class="form-control" required />
                     </div>
                 </div>
 
-                <h3 class="text-primary text-[40px] font-semibold lang" key="clinic-information"><span>Clinic Information</span></h3>
+                <h3 class="text-primary md:text-[30px] lg:text-[40px] xl:text-[50px] text-[25px] font-semibold lang" key="clinic-information"><span>Clinic Information</span></h3>
                 <div class="form-group">
-                    <label class="text-[25px]"><span class="lang" key="clinic-name">Clinic Name</span></label>
+                    <label class="text-[20px]"><span class="lang" key="clinic-name">Clinic Name</span></label>
                     <input type="text" name="ClinicName" class="form-control" required />
                 </div>
                 <div class="form-group">
-                    <label class="text-[25px] required"><span class="lang" key="clinic-type">Type</span></label>
+                    <label class="text-[20px] required"><span class="lang" key="clinic-type">Type</span></label>
                     <div class="flex gap-4">
                         <div class="flex items-center">
                             <input type="radio" value="Veterinary Practice" name="ClinicType" class="w-[25px] h-[25px]" checked />
-                            <label class="ml-2 text-[25px] lang" key="veterinary-practice">Veterinary Practice</label>
+                            <label class="ml-2 text-[20px] lang" key="veterinary-practice">Veterinary Practice</label>
                         </div>
                         <div class="flex items-center">
                             <input type="radio" value="Veterinary Clinic" name="ClinicType" class="w-[25px] h-[25px]" />
-                            <label class="ml-2 text-[25px] lang" key="veterinary-clinic">Veterinary Clinic</label>
+                            <label class="ml-2 text-[20px] lang" key="veterinary-clinic">Veterinary Clinic</label>
                         </div>
                     </div>
                 </div>
-                <div class="flex w-1/2 pr-[14px] mb-[20px]">
+                <div class="flex flex-row gap-[28px]">
                     <div class="form-group">
-                        <label class="text-[25px]"><span class="lang" key="clinic-address">Address</span></label>
+                        <label class="text-[20px]"><span class="lang" key="clinic-address">Address</span></label>
                         <input type="text" name="ClinicAddress" class="form-control" required />
                     </div>
-                </div>
-                <div class="flex w-1/2 pr-[14px] mb-[20px]">
                     <div class="form-group">
-                        <label class="text-[25px]"><span class="lang" key="city">City</span></label>
+                        <label class="text-[20px]"><span class="lang" key="city">City</span></label>
                         <input type="text" name="ClinicCity" class="form-control" required />
                     </div>
                 </div>
-                <div class="form-group">
-                    <p class="text-[25px] lang" key="do-you-want-to-subscribe-now">Do you want to subscribe now?</p>
+                <div class="form-group mt-[30px]">
+                    <p class="text-[20px] lang" key="do-you-want-to-subscribe-now">Do you want to subscribe now?</p>
                 </div>
                 <div class="form-group">
                     <div class="flex items-center">
                         <input type="checkbox" value="true" name="IsNeedSubscribe" class="w-[25px] h-[25px]" />
-                        <label class="ml-2 text-[20px] font-medium lang" key="yes-i-want-to-subscribe-now">Yes, I want to subscribe now</label>
+                        <label class="ml-2 text-[18px] font-medium lang" key="yes-i-want-to-subscribe-now">Yes, I want to subscribe now</label>
                     </div>
                 </div>
                 <div class="mt-[30px]">
@@ -153,14 +150,14 @@
                 </div>
             </form>
         </div>
-        <div class="d-none md:d-show w-[589px] rounded-[40px] border border-solid border-primary py-[50px] px-[47px] text-center">
+        <div class="d-none lg:d-show w-[589px] rounded-[40px] border border-solid border-primary py-[50px] px-[47px] text-center">
             <p class="text-[30px] font-semibold text-primary leading-[35px] mb-5 lang" key="want-to-connect-directly-with-our-Team">Want to connect directly with our Team? Contact Now</p>
             <p class="text-[50px] font-semibold text-primary leading-[50px] mb-[37px]">0822-4000-3524 <span class="text-[40px]">(Whatsapp)</span></p>
             <a href="https://wa.me/+6282240003524?text=Halo%20saya%20tertarik%20dengan%20vethub." target="_blank" class="btn bg-primary text-white min-w-[330px] text-center cursor-pointer lang" key="chat-now">Chat Now</a>
         </div>
     </div>
-
-    <div class="md:d-none mx-auto mt-[30px] w-[589px] rounded-[40px] border border-solid border-primary py-[50px] px-[47px] text-center">
+    @* <div class="mx-auto mt-[30px] w-[589px] rounded-[40px] border border-solid border-primary py-[50px] px-[47px] text-center"> *@
+    <div class="lg:d-none mx-auto mt-[30px] w-[589px] rounded-[40px] border border-solid border-primary py-[50px] px-[47px] text-center">
         <p class="text-[30px] font-semibold text-primary leading-[35px] mb-5 lang" key="want-to-connect-directly-with-our-Team">Want to connect directly with our Team? Contact Now</p>
         <p class="text-[50px] font-semibold text-primary leading-[50px] mb-[37px]">0822-4000-3524 <span class="text-[40px]">(Whatsapp)</span></p>
         <a href="https://wa.me/+6282240003524?text=Halo%20saya%20tertarik%20dengan%20vethub." target="_blank" class="btn bg-primary text-white min-w-[330px] text-center cursor-pointer lang" key="chat-now">Chat Now</a>
