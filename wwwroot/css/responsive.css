@@ -4,10 +4,39 @@
     }
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1440px) {
     /* For laptop: */
-
+    .text-registration-title {
+        font-size: 45px;
+    }
+    .container-reg-form-xl {
+        width: 70%;
+        min-width: 100px;
+    }
+    .container-cta {
+        width: 500px;
+    }
+    .text-contact-now {
+        font-size: 26px;
+    }
+    .text-contact-wa {
+        font-size: 38px;
+    }
 }
+
+@media only screen and (max-width: 1025px) {
+     /*For laptop:*/ 
+    .text-registration-title {
+        font-size: 40px;
+    }
+    .container-reg-form-xl {
+        display:none;
+    }
+    .container-reg-form-sm {
+        display: block;
+    }
+}
+/*md:text-[35px] lg:text-[50px] xl:text-[65px]*/
 
 @media only screen and (max-width: 768px) {
     /* For tablet: */
@@ -17,7 +46,37 @@
     .navbar-container {
         height: 66px;
     }
+    .text-registration-title {
+        font-size: 33px;
+    }
+    .container-cta {
+        width: 450px;
+    }
+    .text-contact-now {
+        font-size: 21px;
+    }
+    .text-contact-wa {
+        font-size: 30px;
+    }
 }
+
+@media only screen and (max-width: 500px) {
+    .container-cta {
+        width: 100%;
+        padding: 25px;
+    }
+    .text-contact-now {
+        font-size: 18px;
+    }
+    .text-contact-wa {
+        font-size: 28px;
+        margin-bottom: 25px;
+    }
+    .container-reg-form-sm {
+        padding: 25px;
+    }
+}
+
 
 @media only screen and (max-width: 425px) {
     /* For mobile phones: */

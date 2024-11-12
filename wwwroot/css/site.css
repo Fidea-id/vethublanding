@@ -58,3 +58,56 @@ html {
 .btn-wa-sales{
     margin-left: 1rem;
 }
+
+.text-registration-title {
+    font-size: 60px;
+}
+.container-reg-form-xl {
+    min-width: 907px;
+    display:block;
+}
+.container-reg-form-sm {
+    width: 100%;
+    display:none;
+}
+.container-cta{
+    width:589px;
+}
+.text-contact-now {
+    font-size:28px;
+}
+.text-contact-wa {
+    font-size: 40px;
+}
+.btn-book {
+    min-width: 220px;
+}
+
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #25D366;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    z-index: 9999;
+}
+
+.floating-button:hover {
+    transform: scale(1.05);
+}
+
+/* Icon style */
+.floating-button img {
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+}

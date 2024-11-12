@@ -50,6 +50,7 @@
   "full-name": "Full Name",
   "position": "Position",
   "whatsapp-active": "Whatsapp Active",
+  "whatsapp-active-sm": "Whatsapp",
   "clinic-information": "Clinic Information",
   "clinic-name": "Clinic Name",
   "clinic-type": "Type",
@@ -82,5 +83,6 @@
   "testimony.1.content": "Before incorporating Vethub into our clinic operations, managing appointments, medical records, and communication with pet owners was often a daunting task. However, since implementing this veterinary operations web service, our clinic has experienced a remarkable transformation.",
   "testimony.2.name": "Drh. Jason",
   "testimony.2.position": "Owner Vet Derma",
-  "testimony.2.content": "Overall, this veterinary operations web service has significantly improved the efficiency and effectiveness of our clinic's operations. The user-friendly interface, streamlined appointment management, and integration of medical records, have collectively elevated our practice to new heights."
+  "testimony.2.content": "Overall, this veterinary operations web service has significantly improved the efficiency and effectiveness of our clinic's operations. The user-friendly interface, streamlined appointment management, and integration of medical records, have collectively elevated our practice to new heights.",
+  "floating.btn.message": "Hello, we are  <br />ready to help you"
 }

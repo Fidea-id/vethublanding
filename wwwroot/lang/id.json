@@ -50,6 +50,7 @@
   "full-name": "Nama Lengkap",
   "position": "Jabatan",
   "whatsapp-active": "No. Whatsapp Aktif",
+  "whatsapp-active-sm": "No. Whatsapp",
   "clinic-information": "Informasi Klinik",
   "clinic-name": "Nama Klinik",
   "clinic-type": "Jenis Klinik",
@@ -82,5 +83,6 @@
   "testimony.1.content": "Sebelum menggunakan Vethub, saya cukup kesulitan dalam mengelola operasional klinik, reservasi, dan rekam medis. Namun, setelah menggunakan layanan digital klinik hewan ini, kami mendapatkan banyak kemajuan.",
   "testimony.2.name": "Drh. Jason",
   "testimony.2.position": "Owner Vet Derma",
-  "testimony.2.content": "Secara keseluruhan, layanan web operasional dokter hewan ini meningkatkan efisiensi dan efektivitas layanan klinik kami secara signifikan. Desainnya mudah digunakan, mengelola booking jadi lebih mudah, dan integrasi rekam medis yang mempercepat pemeriksaan."
+  "testimony.2.content": "Secara keseluruhan, layanan web operasional dokter hewan ini meningkatkan efisiensi dan efektivitas layanan klinik kami secara signifikan. Desainnya mudah digunakan, mengelola booking jadi lebih mudah, dan integrasi rekam medis yang mempercepat pemeriksaan.",
+  "floating.btn.message": "Halo, kami siap <br />membantu anda"
 }
