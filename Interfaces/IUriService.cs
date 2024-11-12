@@ -2,6 +2,6 @@
 {
     public interface IUriService
     {
-        Uri GetAPIUri(string query = null);
+        Uri GetAPIUri(string? query = null);
     }
 }

@@ -8,12 +8,10 @@ namespace VethubLanding.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
         private readonly IRestAPIService _restAPIService;
 
         public HomeController(ILogger<HomeController> logger, IRestAPIService restAPIService)
         {
-            _logger = logger;
             _restAPIService = restAPIService;
         }
 
@@ -42,9 +40,15 @@ namespace VethubLanding.Controllers
             {
                 //Get the AuthToken
                 var response = await _restAPIService.PostResponse<BaseAPIResponse>("Auth/Demo", JsonConvert.SerializeObject(request));
+
+                if (response == null)
+                {
+                    throw new Exception("Failed to retrieve auth token");
+                }
+
                 return "success";
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 throw;
             }
@@ -59,7 +63,7 @@ namespace VethubLanding.Controllers
                 var response = await _restAPIService.GetResponse<BaseAPIResponse<IEnumerable<SubscriptionResponse>>>("Subscription");
                 return response.Data;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 throw;
             }
