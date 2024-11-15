@@ -10,6 +10,173 @@ html {
   position: relative;
   min-height: 100%;
 }
+.hero-section{
+    margin:0 0 100px 0;
+    top:-450px;
+    right:25px;
+}
+.hero-image-1 {
+    position: absolute;
+    width: 45%;
+    right: 250px;
+    top: 100px;
+}
+
+.feature-section {
+    position: relative;
+    margin: 10px auto;
+}
+
+.feature-items {
+    display: flex;
+    margin: 50px auto;
+    width: 75%;
+    gap: 25px;
+}
+
+.feature-card {
+    width: 33%;
+    height: 450px;
+    position: relative;
+    border: 1px solid #085EB5;
+    border-radius: 2.75rem;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    object-fit: cover;
+}
+
+.feature-sub-card {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    height: 210px;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 15px 25px 30px 25px;
+    border-radius: 2.75rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature-button {
+    margin: 80px 0 60px;
+}
+.solution-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Fixed 5 columns */
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 85%;
+    margin: 50px auto;
+    padding-bottom: 150px;
+    justify-content: center;
+}
+
+/* Card Styling */
+.solution-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 250px;
+    padding: 10px;
+    border-radius: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.solution-card-bl {
+    background-color: #0D5ADA; /* Blue background */
+    color: #0D5ADA; /* Black text for readability */
+    border: 1px solid #0D5ADA;
+}
+
+.solution-card-wh {
+    background-color: #ffffff; /* White background */
+    color: #ffffff; /* Black text for readability */
+    border: 1px solid #0D5ADA;
+}
+
+.solution-card-bl>.solution-text-card{
+    background-color: #ffffff;
+}
+
+.solution-card-wh > .solution-text-card {
+    background-color: #0D5ADA;
+}
+.solution-text-card {
+    padding: 10px;
+    border-radius: 20px;
+    min-width: 180px;
+    min-height: 65px;
+    /* Flexbox for centering */
+    display: flex; /* Enables Flexbox */
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    text-align: center; /* Ensures multi-line text stays centered */
+}
+
+/* Icon Styling */
+.solution-icon {
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.solution-icon img {
+    width: 70px;
+    height: 70px;
+}
+
+.text-primary {
+    color: #085EB5; /* Adjust as needed */
+}
+
+.text-gray {
+    color: #555; /* Adjust as needed for text color */
+}
+
+#popupModal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    justify-content: center;
+    align-items: center;
+    z-index:1000;
+}
+
+#popupContent {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 30px;
+    max-width: 1024px;
+    width: 90%;
+    text-align: center;
+    position: relative;
+}
+
+#closeBtn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    color: #333;
+    cursor: pointer;
+}
 
 .navbar-container {
     height: 66px;
@@ -20,11 +187,11 @@ html {
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.container-title{
-    margin-bottom:38px;
-    padding-left:2.5rem;
-    padding-right:2.5rem;
-    padding-top:95px;
+.container-title {
+    margin-bottom: 200px;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 0px;
 }
 
 /* Base Style for the Play Button */
@@ -36,6 +203,9 @@ html {
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
     transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.text-subtitle {
+    padding: 20px 0 10px;
 }
 
 #driveVideo {
